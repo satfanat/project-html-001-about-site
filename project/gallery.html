@@ -4,31 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fazekas Zsolt fényképes bemutató</title>
-    <link rel="stylesheet" href="css/main.css">
+    <meta name="robots" content="index, follow">
+    <meta name="description" name="Fazekas Zsolt távközlési vállalkozó bemutetkozó oldala">
+    <meta name="keywords" name="Fazekas Zsolt, távközlés, vállalkozás">
+    <title>Fazekas Zsolt távközlési vállalkozó képesassets/css/main.cs bemutatkozás</title>
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
-    <header>
-        <img id="banner" src="images/banner.jpg" alt="">
-        <nav id="menu">
-            <ul>
-                <li><a href="index.html">Kezdőlap</a></li>
-                <li><a href="works.html">Munkáim</a></li>
-                <li><a href="gallery.html">Képek</a></li>
-                <li><a href="about.html">Rólam</a></li>
-            </ul>
-        </nav>
-        <h1>Tevékenységeim képekben</h1>
+    <!-- header -->
+    <header id="header">
+        <h1>Fazekas Zsolt távközlési vállalkozó</h1>
     </header>
+
+    <!-- navbar -->
+    <nav id="nav">
+        <div class="nav">
+            <div class="nav-links">
+                <a href="index.html">Kezdőlap</a>
+                <a href="works.html">Munkáim</a>
+                <a href="gallery.html">Képek</a>
+                <a href="about.html">Rólam</a>
+            </div>
+        </div>
+    </nav>
+    <!-- banner -->
+    <div class="hero-image">
+        <div class="hero-text">
+            <h2>Legyünk kapcsolatban!</h2>
+            <h3>Széleskörű megoldások a távközlés területén</h3>
+            <a href="/about.html"><button> Kapcsolat </button></a>
+        </div>
+    </div>
+&nbsp;
     <main>
         <section>
+            <table class="tablazat">
+                <th>
+                    Munkáim képekben
+                </th>
+                <tbody>
+                   <tr class="oszlop">
+                       <td><img src="/images/global.jpg" alt=""></td>
+                       <td><img src="/images/kabeldob.jpg" alt=""></td>
+                       <td><img src="/images/lan.jpg" alt=""></td>
+                       <td><img src="/images/mernok_sdh.jpg" alt=""></td>
+                   </tr>
+                   <tr class="oszlop">
+                       <td><img src="/images/mernok_szoba.jpg" alt=""></td>
+                       <td><img src="/images/mernok_torony.jpg" alt=""></td>
+                      <td><img src="/images/minicso.jpg" alt=""></td>
+                       <td><img src="/images/munkas.jpg" alt=""></td>
+                   </tr>
+                   <tr class="oszlop">
+                       <td><img src="/images/muszeresz.jpg" alt=""></td>
+                       <td><img src="/images/patchpanel.jpg" alt=""></td>
+                       <td><img src="/images/sfp.jpeg" alt=""></td>
+                       <td><img src="/images/utp.jpg" alt=""></td>
+                   </tr>
+                   <tr class="oszlop">
+                       <td><img src="/images/mernok_sdh.jpg" alt=""></td>
+                   </tr>
+                </tbody>
+            </table>
 
         </section>
     </main>
-    <footer>
-        <a href="#menu">
-            <button type="button" id="button">Menü</button></a>
+     <!-- footer -->
+     <footer id="footer">
+        <div class="footer">
+            <section class="button">
+                <a href="#nav"><button> MENÜ </button></a>
+                <a href="#top"><button> VISSZA </button></a>
+            </section>
+        </div>
+
+        <p class="copyright"> &copy; Minden jog fenntartva 2020</p>
     </footer>
 </body>
+
 </html>
