@@ -42,7 +42,7 @@ p {
   width: 60px;  
  }
 
-body {
+ body {
   margin: 0px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
   max-width: 70%;
@@ -188,6 +188,7 @@ main {
   background-color: white;
  }
 
+ 
  .munkadoboz {
   display: flex;
   align-items: center;
@@ -216,4 +217,17 @@ main {
   font-size: 20px;
   padding-left: 10px;
   padding-right: 10px;
+  }
+
+
+  .img-container {
+    float: left;
+    width: 33,3%;
+    padding: 5px;
+  }
+
+  .clearfix::after {
+    content "";
+    clear: both;
+    display: table;
   }
