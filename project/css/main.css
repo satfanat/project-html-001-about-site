@@ -1,11 +1,14 @@
 /* Alap */
+* {
+  box-sizing: border-box;
+}
 
 h1 {
   color: honeydew;
   margin-top: 0;
   padding-left: 20px;
   text-align: left;
-}
+  }
 
 h2 {
   font-size: 34px;
@@ -30,6 +33,11 @@ p {
   text-align: justify;
 }
 
+body {
+  text-align: center;
+}
+
+/* Fejléc */
 #header {
   background-color: #333;
   height: 50px;
@@ -42,8 +50,7 @@ p {
    ;
  }
 
-/* Navigáció */
-
+ /* Navigáció */
 .nav {
   height: 50px;
   width: 100%;
@@ -142,25 +149,37 @@ p {
     position: relative;
     max-width: 600px;
     text-align: justify
- 
-  }
-
+   }
+   
+   /* Három kép egymás mellett */
   .img-container {
     float: left;
     width: 33,3%;
     padding: 5px;
   }
-
   .clearfix::after {
     content "";
     clear: both;
     display: table;
   }
-  .text-container {
-    float: right;
-    width: 66,7%;
+  /* Kép balról, mellette szöveg */
+  .img-container2 {
+    float: left;
+    width: 80%;
     padding: 5px;
+    background-color: khaki;
   }
+
+  .clearfix2 {
+    display: inline-block;
+  
+  }
+  .clearfix2::after {
+    content "";
+    clear: both;
+    display: table
+  }
+  /* Ürlap */
   #exampleInputPassword1 {
     width: 150px;
     height: 200px;
