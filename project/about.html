@@ -17,94 +17,77 @@
         <h1>Fazekas Zsolt távközlési vállalkozó</h1>
     </header>
 
-    <!-- navbar -->
+    <!-- navigáció -->
+
     <nav id="nav">
-        <div class="nav">
-            <div class="nav-links">
-                <a href="index.html">Kezdőlap</a>
-                <a href="works.html">Munkáim</a>
-                <a href="gallery.html">Képek</a>
-                <a href="about.html">Rólam</a>
-            </div>
-        </div>
-    </nav>
-    <!-- banner -->
-    <div class="bemutato">
-        <h2>Legyünk kapcsolatban!</h2>
-        <h3>Széleskörű megoldások a távközlés területén</h3>
-        <a href="/project/about.html"><button> Kapcsolat </button></a>
-    </div>
-    
-    <main>
-    <div>
-        <img src="/images/mernok_szoba.jpg" alt="">
-    </div>
-    <center>
-    <div class="rolam">
-        Fazekas Zsolt vagyok.
-        
-        Szegeden távközlő technikusi végzettséget szereztem,
-        majd Győrben a Szechenyi István Egyetemen villamosmsmérnökként végeztem.
-        Tanulmányaimat követően a Magyar Államvasutak távközlési főnökségén helyezkedtem el.
-        Elsősorban adathálózati és átviteltechnikai berendezések tervezésévek, kivitelezésével
-        illetve karbantartásával foglalkozom. Az emlmúlt közel 20 évben gyakorlatilag a távközlő
-        szakma valamennyi kihívásával találkoztam.
-        Másodállásban egyéni vállalkozó is vagyok, fő tvékenységi köröm a távközlési hálózat
-        építés. A mérnöki kamaránál regisztrált tag vagyok az alábbi jogosultságokkal:
-    </div>
-    <section>
         <ul>
-            <li>Távközlő tervező</li>
-            <li>Felelős műszaki vezető</li>
-            <li>Műszaki ellenőr</li>
+            <li><a href="index.html">Kezdőlap</a></li>
+            <li><a href="works.html">Munkáim</a></li>
+            <li><a href="gallery.html">Képek</a></li>
+            <li><a href="about.html">Rólam</a></li>
         </ul>
-    </section>
-    <b> Az alábbi távközlő munkák elvégzését vállalom:</b>
-    <section>
-        <ol>
-            <li>Optikai hálózat építés, tervezés, műszaki vezetés</li>
-            <li>Adathálózati eszközök telepítése, felügyelete </li>
-            <li>LAN hálózatok építése,mérése</li>
-        </ol>
-    </section>
-        
-    <div class="container">
-        <div class="row"></div>
-        <div class="col-4">
-            <div class="col-4"></div>
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Név</label>
-                    <input type="text" class="form-control" id="exampleInputPassword">
-                </div>
-                <div class="form-horizontal">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter e-mail" value="" readonly>
-                    <small id="emailHelp" class="form-text text-muted"></small>
-                </div>
-                <div class="form-group form-check">
-                    <label for="exampleInputPassword1">Üzenet</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1">
-                </div>
-                <button type="submit" class="btn btn-primary">Elküld</button>
-            </form>
-            <div class="col-4"></div>
-        </div>
-    </div>
-    </center>
-   
-    
-</main>
-<!-- footer -->
-<footer id="footer">
-    <div class="footer">
-        <section class="button">
-            <a href="#nav"><button> MENÜ </button></a>
-            <a href="#top"><button> VISSZA </button></a>
+    </nav>
+
+    <!-- Rólam -->
+    <main>
+        <section>
+            <div class="bal-kep">
+                <img src="/project/images/mernok_szoba.jpg" alt="Mernok munkaban">
+            </div>
+            <article class="rolam">
+                Fazekas Zsolt vagyok.
+
+                Szegeden távközlő technikusi végzettséget szereztem,
+                majd Győrben a Szechenyi István Egyetemen villamosmsmérnökként végeztem.
+                Tanulmányaimat követően a Magyar Államvasutak távközlési főnökségén helyezkedtem el.
+                Elsősorban adathálózati és átviteltechnikai berendezések tervezésévek, kivitelezésével
+                illetve karbantartásával foglalkozom. Az emlmúlt közel 20 évben gyakorlatilag a távközlő
+                szakma valamennyi kihívásával találkoztam.
+                Másodállásban egyéni vállalkozó is vagyok, fő tvékenységi köröm a távközlési hálózat
+                építés. A mérnöki kamaránál regisztrált tag vagyok az alábbi jogosultságokkal:
+                <ul>
+                    <li>Távközlő tervező</li>
+                    <li>Felelős műszaki vezető</li>
+                    <li>Műszaki ellenőr</li>
+                </ul>
+                <b> Az alábbi távközlő munkák elvégzését vállalom:</b>
+                <ol>
+                    <li>Optikai hálózat építés, tervezés, műszaki vezetés</li>
+                    <li>Adathálózati eszközök telepítése, felügyelete </li>
+                    <li>LAN hálózatok építése,mérése</li>
+                </ol>
+            </article>
         </section>
-    </div>
-    
+        <section>
+            <form action="" class="message-form">
+                <div class="form-group">
+                    <label for="">Név</label>
+                    <input type="text" class="form-control" minlength="5">
+                </div>
+                <div class="form-group">
+                    <label for=""></label>
+                    <input type="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for=""></label>
+                    <textarea class="form-control"></textarea>
+                </div>
+                <button type="submit">
+                    Küldés
+                </button>
+            </form>
+        </section>
+
+    </main>
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer">
+            <section class="button">
+                <a href="#nav"><button> MENÜ </button></a>
+                <a href="#top"><button> VISSZA </button></a>
+            </section>
+        </div>
+
         <p class="copyright"> &copy; Minden jog fenntartva 2020</p>
     </footer>
 </body>

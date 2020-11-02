@@ -1,185 +1,105 @@
 /* Alap */
-* {
-  box-sizing: border-box;
-}
-
-h1 {
-  color: honeydew;
-  margin-top: 0;
-  padding-left: 20px;
-  text-align: left;
-  }
-
-h2 {
-  font-size: 34px;
-  text-align: center;
-}
-h3, h4 {
-  text-align: center;
-}
-
-button {
-  font-size: 24px;
-}
-
-h1, h2, h3, h4, a, button {
-  text-transform: uppercase;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
-  text-align: justify;
-}
 
 body {
-  text-align: center;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
 }
 
-/* Fejléc */
-#header {
-  background-color: #333;
-  height: 50px;
-  font-size: 26;
- }
-
- .bemutato {
-   text-align: center;
-   background-color: 333
-   ;
- }
-
- /* Navigáció */
-.nav {
-  height: 50px;
-  width: 100%;
-  background-color: #333333;
-  position: relative;
-  }
-
-.nav > .nav-links {
-  display: inline;
-  float: right;
-  font-size: 22px;
+header {
+  background-color: #505050;
+  height: 4em;
+  line-height: 4em;
 }
 
-.nav > .nav-links > a {
+header h1 {
+margin: 0;
+padding-left: 2em;
+}
+
+#nav {
+  padding-left: 2em;
+ }
+
+#nav ul {
+  list-style: none;
+}
+
+#nav ul li {
   display: inline-block;
-  padding: 13px 50px 13px 30px;
-  text-decoration: none;
-  color: #efefef;
 }
 
-.nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+section {
+  padding: 1em 2em;
+  background-color: rgb(200, 200, 200);
+  border: solid white;
 }
 
-@media (max-width:600px) {
-  .nav > .nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-     .nav > .nav-links {
-    position: absolute;
-    display: block;
-    width: 100%;
-    background-color: #333;
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    left: 0px;
-  }
-  .nav > .nav-links > a {
-    display: block;
-    width: 100%;
-  }
+.foto-container img {
+width: 38%;
+margin: 5%;
 }
-
-.copyright {
-    text-align: center;
-    display: block;
-    }
-
-.button {
  
-  float: left;
-  width: calc(100% - 180px);
-  height: 200px;
-
-}
-
-.footer {
-  height: 30px;
-  display: inline;
-
-}
-
-.foto {
-    text-align: center;
-     max-width: 100%;
-     height: auto;
-    padding: 15px;
-     
-  }
-
-.bemutatkozas {
- padding-bottom: 5px;
-}
-
-.content {
-  border: 1px;
-  border-style: solid; 
-  border-radius: 10px;
-  border-color: darkgray;
-  max-width: 32%;
-  float: left;
-  padding: 5px;
-  text-align: justify;
-  font-family: sans-serif;
-  font-size: 20px;
+.tulajdonsagok {
+  display: inline-block;
+  width: 28%;
+  margin-right: 1%;
+  box-sizing: border-box;
   background-color: white;
-  
+  text-align: center;
+  height: 5em;
+  line-height: 5em;
+  font-size: 2em;
+  border-radius: 3px;
+  border: solid white 1px;
+  box-shadow: black 3px;
+}
+
+/* Munkáim */
+
+#munka article {
+  border-bottom: solid 2px white;
+  margin-bottom: 2em;
+}
+
+#munka article img {
+  width: 25%;
+  margin-right: 2%;
+}
+
+#munka article .munkaim {
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
  }
 
-  .rolam {
-    position: relative;
-    max-width: 600px;
-    text-align: justify
-   }
-   
-   /* Három kép egymás mellett */
-  .img-container {
-    float: left;
-    width: 33,3%;
-    padding: 5px;
-  }
-  .clearfix::after {
-    content "";
-    clear: both;
-    display: table;
-  }
-  /* Kép balról, mellette szöveg */
-  .img-container2 {
-    float: left;
-    width: 80%;
-    padding: 5px;
-     }
+ /* Galéria */
 
-  .clearfix2 {
-    display: inline-block;
-  
+ .galeria img {
+width: 29%;
+margin: 1%;
+ }
+
+ /* Mobil nézet */
+ @media screen and (min width: 577px) and (max-width: 768px) {
+  .tulajdonsagok {
+    width: 100%;
   }
-  .clearfix2::after {
-    content "";
-    clear: both;
-    display: table
+  .galeria img {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+     }
+}
+ /* Tablet nézet */
+@media screen and (max-width: 576px) {
+  .tulajdonsagok {
+    width: 100%;
   }
-  /* Ürlap */
-  #exampleInputPassword1 {
-    width: 150px;
-    height: 200px;
-  }
+  .galeria img {
+    width: 47%;
+    margin-left: 0;
+    margin-right: 0;
+     }
+}
+
