@@ -18,16 +18,32 @@ padding-left: 2em;
 }
 
 #nav {
-  padding-left: 2em;
+  
  }
 
 #nav ul {
   list-style: none;
+  background-color: #505050;
+  padding-left: 2em;
 }
 
 #nav ul li {
   display: inline-block;
-}
+  }
+
+  #nav ul li a{
+   color: white;
+   text-decoration: uppercace;
+    }
+
+  ul li:hover {
+    background-color: lightslategrey;
+    }
+
+  ul li:active {
+      background-color:#49f065;
+      }
+
 
 section {
   padding: 1em 2em;
